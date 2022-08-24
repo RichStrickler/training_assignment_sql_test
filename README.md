@@ -1,0 +1,1 @@
+# training_assignment_sql_test

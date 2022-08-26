@@ -16,6 +16,8 @@ public class App {
 
   public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
 
+    Class.forName("com.mysql.cj.jdbc.Driver");
+
     configManager sqlConfig = new configManager("sql.cfg", '=', '"');
     Map<String, String> sqlConfigMap = sqlConfig.getMap();
 
